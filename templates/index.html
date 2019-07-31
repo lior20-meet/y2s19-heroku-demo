@@ -1,0 +1,19 @@
+<!-- Put the HTML template for your page here! -->
+<!doctype html>
+    <html>
+        <head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+      </head>
+        <body>
+            <h1> {{food}}</h1>
+            <p> Water are not my real favorite food, but this is the first thing that I saw now on my table</p>
+
+            {% if food == "water" %}
+            	<p> Wow, you love to drink</p>
+            {%else%}
+            	<p> Don't you love drink water?</p>
+            {%endif%}
+
+        </body>
+
+    </html>
