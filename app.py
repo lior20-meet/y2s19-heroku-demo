@@ -4,7 +4,7 @@ food = "water"
 
 @app.route('/')
 def home_page():
-    return render_template(
+    return render_template(s. 
     	"index.html",  food = "milk")
 
 if __name__ == '__main__':
